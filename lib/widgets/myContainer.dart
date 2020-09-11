@@ -1,5 +1,6 @@
 import '../models/containerModels.dart';
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class MyContainer extends StatefulWidget {
   final int index;
@@ -20,7 +21,7 @@ class _MyContainerState extends State<MyContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blueGrey,
+      color: Hexcolor("#5C6BC0"),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -39,10 +40,12 @@ class _MyContainerState extends State<MyContainer> {
                   Text("2"),
                 ],
               ),
+              Text("Clients Rating"),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+
                   IconButton(icon: starwithborder, onPressed: turnToAStar),
                   IconButton(icon: starwithborder, onPressed: turnToAStar),
                   IconButton(icon: starwithborder, onPressed: turnToAStar),
